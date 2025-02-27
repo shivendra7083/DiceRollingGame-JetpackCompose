@@ -55,7 +55,7 @@ fun App() {
         Column(modifier = Modifier.fillMaxSize()) {
             Spacer(modifier = Modifier.size(50.dp))
             Text(
-                text = "Welcome to Dice Rolling game " ,
+                text = "Welcome to Dice Rolling game ",
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center,
                 fontSize = 26.sp,
@@ -90,17 +90,21 @@ fun App() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp)
             ) {
-                Text(text = "Player one score\n ${playerScore.value.get(0)}", textAlign = TextAlign.Center,
+                Text(
+                    text = "Player one score\n ${playerScore.value.get(0)}",
+                    textAlign = TextAlign.Center,
                     color = Color.Black
                 )
-                Text(text = "Player two score\n ${playerScore.value.get(1)}", textAlign = TextAlign.Center,
+                Text(
+                    text = "Player two score\n ${playerScore.value.get(1)}",
+                    textAlign = TextAlign.Center,
                     color = Color.Black
                 )
             }
             Spacer(modifier = Modifier.height(30.dp))
 
 
-            }
-
         }
+
     }
+}
